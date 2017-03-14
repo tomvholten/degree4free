@@ -1,0 +1,27 @@
+{
+  "name": "degree4free",
+  "version": "1.0.0",
+  "description": "Degree 4 free webserver",
+  "main": "index.js",
+  "scripts": {
+    "test": "testnow"
+  },
+  "repository": {
+    "type": "git",
+    "url": "\u0016https://github.com/tomvholten/degree4free.git"
+  },
+  "keywords": [
+    "degree",
+    "for",
+    "free"
+  ],
+  "author": "Tom van Holten",
+  "license": "ISC",
+  "dependencies": {
+    "consolidate": "0.14.5",
+    "ejs": "2.5.5",
+    "express": "^4.14.0",
+    "mustache-express": "1.2.4",
+    "path": "0.12.7"
+  }
+}
