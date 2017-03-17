@@ -3,7 +3,7 @@ var express = require('express');
 var app = module.exports = express();
 
 app.get('/', function(req,res){
-	res.render('homepage.html');
+	res.render('Newhomepage.html');
 });
 
 app.get('/page1', function(req,res){
