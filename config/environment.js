@@ -3,13 +3,16 @@ var app = module.exports = express();
 var engine = require('consolidate');
 var mustacheExpress = require('mustache-express');
 var path = require ('path');
+var bodyParser = require('body-parser'); // Parser to gain access to request body
+var request = require('request');
 
-console.log('test');
+console.log('test environment');
 
 app.engine('html', mustacheExpress());
 app.set('view engine', 'mustache');
 app.set('views', __dirname + '/views');
-
+app.use(bodyParser.urlencoded({ extended: false })); // parse application/x-www-form-urlencoded 
+app.use(bodyParser.json()); // support json encoded bodies
 /**
 app.engine('html', mustacheExpress());
 app.set('view engine', 'mustache');

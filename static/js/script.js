@@ -34,3 +34,7 @@ $(document).ready(function(){
     });
   });
 });
+
+function underconstruction() {
+    alert("This function is under construction. Please use the MODELS button in the top menue to find what you are looking for!");
+}

@@ -16,13 +16,14 @@ app.use('/static', express.static(__dirname + '/static'));
 /** SPECIFIED MODULES  **/
 
 var routes = require('./config/routes.js');
-var environment = require('./environment.js');
+var environment = require('./config/environment.js');
 var tools = require('./config/tools.js');
+var models = require('./lib/posts/models.js');
 
 app.use(tools.logger);
 app.use(environment);
 app.use(routes);
-
+app.use(models);
 
 
 /** START SERVER **/

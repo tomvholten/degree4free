@@ -30,6 +30,8 @@ body {
   }
 
 
+/* Navbar styling */ 
+
    .navbar-fixed-left {
     width: 140px;
     position: fixed;
@@ -219,7 +221,7 @@ body {
   /* Added for multiple column ddmenu */
 .dropdown-menu.columns-3 {
   min-width: 600px;
-  background-color: #6592AE;
+  background-color: #dbdbdb;
 }
 .dropdown-menu li a {
   padding: 5px 15px;
@@ -227,7 +229,7 @@ body {
 }
 .multi-column-dropdown {
   list-style: none;
-  background-color: #6592AE;
+  background-color: #dbdbdb;
   padding-left: 5px;
 }
 .multi-column-dropdown li a {
@@ -243,21 +245,36 @@ body {
   border-right: black;
 }
 
+.mendivider{
+	color: #696969 !important;
+	background-color: #696969 !important;
+}
+
 /*hoover color for dropdown*/
 #multi-dropdown.multi-column-dropdown li a:hover {
   text-decoration: none;
-  color: black !important;
-  background-color: #6592AE !important;
+  color: #6592AE !important;
+  background-color: #dbdbdb !important;
 }
 
 /*overrride active on navbar for dropdown*/
   #multi-dropdown.multi-column-dropdown li.active a {
   color: #fff !important;
-  background-color: #6592AE !important;
+  background-color: #dbdbdb !important;
   border-color: #b91773 !important;
 }
   #multi-dropdown.multi-column-dropdown li a {
-  color: #fff !important;
-  background-color: #6592AE !important;
+  color: #151515 !important;
+  background-color: #dbdbdb !important;
   border-color: #b91773 !important;
 }
+
+/*General styling */
+
+  .lowmargtop{
+    padding-top: 10px !important;
+  }
+
+  .lowmargbot{
+    padding-bottom: 10px !important;
+  }

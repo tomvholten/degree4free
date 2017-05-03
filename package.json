@@ -18,10 +18,12 @@
   "author": "Tom van Holten",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.17.1",
     "consolidate": "0.14.5",
     "ejs": "2.5.5",
     "express": "^4.14.0",
     "mustache-express": "1.2.4",
-    "path": "0.12.7"
+    "path": "0.12.7",
+    "request": "^2.81.0"
   }
 }

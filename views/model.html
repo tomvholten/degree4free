@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Degree 4 Free</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <link rel="stylesheet" href="../static/css/bootstrap.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="../static/css/styles.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="../static/img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="../static/img/favicon/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="../static/img/favicon/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="../static/img/favicon/manifest.json">
+  <link rel="mask-icon" href="../static/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+</head>
+
+
+<body id="model" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+	<nav class="navbar navbar-default navbar-fixed-top">
+	  <div class="container navbar-box">
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>                        
+	      </button>
+	      <a class="navbar-brand" href="http://localhost:3000/"><img src="../static/img/gradhat.png" href="https://localhost:3000/" alt="logo" style="width: 100%;height: 100%;"></a>
+	    </div>
+
+	    <div class="collapse navbar-collapse" id="myNavbar">
+
+	      <ul id="nav-other" class="nav navbar-nav navbar-right">
+	        <li><a href="#">ADD MODEL</a></li>
+	      </ul>
+
+	      <form id="nav-search" class="navbar-form navbar-right">
+	      	<div class="input-group">
+	        	<input type="text" class="form-control" placeholder="Search" style="max-width: 150px">
+	        	<div class="input-group-btn">
+	          		<button class="btn btn-default" type="submit">
+	            		<i class="glyphicon glyphicon-search"></i>
+	          		</button>
+	        	</div>
+	      	</div>
+	      </form>
+	      
+
+	      <ul id="models" class="nav navbar-nav">
+	    	<li class="dropdown">
+	           <a href="#" class="dropdown-toggle" data-toggle="dropdown">MODELS<span class="caret"></span></a>
+	           <ul class="dropdown-menu multi-column columns-3">
+		          <li class="col-sm-4">
+				    <ul id="multi-dropdown" class="multi-column-dropdown sideline">
+					  <li><a href="#marketing">MARKETING</a></li>
+					  <li><a href="#">link top model</a></li>
+					  <li><a href="#">link top model</a></li>
+					  <li><a href="#">link top model</a></li>
+					  <li class="divider"></li>
+					  <li><a href="#">all models</a></li>
+				    </ul>
+			      </li>
+			      <li class="col-sm-4">
+				    <ul id="multi-dropdown" class="multi-column-dropdown sideline">
+					  <li><a href="#finance">FINANCE</a></li>
+					  <li><a href="#">link top model</a></li>
+					  <li><a href="#">link top model</a></li>
+					  <li><a href="#">link top model</a></li>
+					  <li class="divider"></li>
+					  <li><a href="#">all models</a></li>
+				    </ul>
+			      </li>
+			      <li class="col-sm-4">
+				    <ul id="multi-dropdown" class="multi-column-dropdown">
+				      <li><a href="#purchasing">PURCHASING</a></li>
+				      <li><a href="#">link top model</a></li>
+					  <li><a href="#">link top model</a></li>
+					  <li><a href="#">link top model</a></li>
+					  <li class="divider"></li>
+					  <li><a href="#">all models</a></li>
+				    </ul>
+			      </li>
+	            </ul>
+	        </li>
+	      </ul>
+
+	    </div>
+	  </div>
+	</nav>
+
+	
+	<!-- Logo introduction -->
+	<div id="intro" class="container lowmargbot">
+		<div class="row">
+			<div class="col-sm-4">
+				<img src="../static/img/logo2.png" alt="logo" style="width: 100%;height: 100%;">
+			</div>
+			<div class="col-sm-8">
+				<h2><small class="subtitle">Share and use educational models</small></h2>
+			</div>
+	  	</div>
+	  	<hr>
+	</div>
+
+
+	<!-- Content section -->
+	<div id="model-content" class="container lowmargtop">
+
+		<h1 class="title">{{title}}</h1>
+		<h4 class="intro">{{intro}}</h4>
+
+		<div id="content">{{{content}}}</div><hr>
+		<div id = "youtube" class= text-center> {{{youtube}}} </div>
+
+		<div id= "model-info" class="container bg-grey boarding" id="info">
+			<h3> Author: {{author}}	</h3>
+			<h4> 
+				<p> E-mail: {{email}}</p>
+				<p> Date: {{date}}</p>
+			</h4>
+			<p>Category: {{category}}</p>
+		</div>
+
+
+	
+	</div>
+	
+	
+<script src="../static/js/script.js"></script>
+<script src="../static/js/bootstrap.min.js"></script>
+</body>
+</html>
